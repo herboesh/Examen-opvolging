@@ -17,12 +17,12 @@
         </Grid.Background>
         <Label Content="Intellisense" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="59" Width="187" FontWeight="Bold" FontStyle="Italic" FontSize="30"/>
         <Label Content="Ingave punt leerling" HorizontalAlignment="Left" Margin="10,69,0,0" VerticalAlignment="Top" Height="39" Width="227" FontSize="20" FontWeight="Bold"/>
-        <ComboBox x:Name="Cb1" HorizontalAlignment="Left" Margin="133,129,0,0" VerticalAlignment="Top" Width="149" Height="29"/>
-        <ComboBox x:Name="Cb2" HorizontalAlignment="Left" Margin="133,192,0,0" VerticalAlignment="Top" Width="149" Height="29"/>
-        <ComboBox x:Name="Cb3" HorizontalAlignment="Left" Margin="133,272,0,0" VerticalAlignment="Top" Width="149" Height="29"/>
+        <ComboBox x:Name="Cb1" HorizontalAlignment="Left" Margin="133,129,0,0" VerticalAlignment="Top" Width="149" Height="29" SelectionChanged="Cb1_SelectionChanged"/>
+        <ComboBox x:Name="Cb3" HorizontalAlignment="Left" Margin="133,281,0,0" VerticalAlignment="Top" Width="149" Height="29" SelectionChanged="Cb3_SelectionChanged"/>
+        <ComboBox x:Name="Cb2" HorizontalAlignment="Left" Margin="133,192,0,0" VerticalAlignment="Top" Width="149" Height="29" SelectionChanged="Cb2_SelectionChanged"/>
         <Label Content="Klas" HorizontalAlignment="Left" Margin="34,129,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
-        <Label Content="Leerling" HorizontalAlignment="Left" Margin="34,192,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
-        <Label Content="Vak" HorizontalAlignment="Left" Margin="37,272,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <Label Content="Leerling" HorizontalAlignment="Left" Margin="34,281,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <Label Content="Vak" HorizontalAlignment="Left" Margin="37,192,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
         <Label x:Name="Resultaat" Content="Resultaat" HorizontalAlignment="Left" Margin="37,399,0,0" VerticalAlignment="Top" Width="74" FontWeight="Bold" FontSize="14"/>
         <TextBox x:Name="Resultaat1" HorizontalAlignment="Left" Height="25" Margin="133,399,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="149"/>
         <Button x:Name="UitvoerenPunt" Content="Uitvoeren" HorizontalAlignment="Left" Margin="34,453,0,0" VerticalAlignment="Top" Width="107" Height="31" Click="UitvoerenPunt_Click" FontWeight="Bold"/>

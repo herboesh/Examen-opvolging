@@ -17,10 +17,11 @@
         </Grid.Background>
         <Label Content="Intellisense" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="59" Width="187" FontWeight="Bold" FontStyle="Italic" FontSize="30"/>
         <Label Content="Opvraging resultaten leerlingen" HorizontalAlignment="Left" Margin="149,74,0,0" VerticalAlignment="Top" Height="39" Width="330" FontSize="20" FontWeight="Bold"/>
-        <Button x:Name="TkLN" Content="Terugkeren" HorizontalAlignment="Left" Margin="218,141,0,0" VerticalAlignment="Top" Width="114" Height="33" FontSize="14" FontWeight="Bold" Click="TkLN_Click"/>
+        <Button x:Name="TkLN" Content="Terugkeren" HorizontalAlignment="Left" Margin="240,135,0,0" VerticalAlignment="Top" Width="114" Height="33" FontSize="14" FontWeight="Bold" Click="TkLN_Click"/>
         <DataGrid x:Name="GridLNR"  
                   Height="181" Margin="54,195,68,44" 
                   AutoGenerateColumns="True">
+            
             
         </DataGrid>
     </Grid>

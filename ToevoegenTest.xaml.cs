@@ -36,19 +36,17 @@ namespace Opvolging
                 }
             }
             Cbt.ItemsSource = Klassen;
-
-            //Vakken pas in combobox nadat klas ingegeven is. ( nog doen bij ingavepunten scherm. ) een klas linken aan vak , op wpf scherm knop bijmaken van welke klas je vakken en leerkrachten toevoegd.
-        }
-        private void Cbt2_SelectionChanged(object sender, SelectionChangedEventArgs e)
+           
+        }   
+        private void Cbt_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             using (Repos rep = new Repos())
             {
-                TempList1 = rep.Vakken();
-                foreach (Vak v in TempList1)
+                TempList1 = rep.Vakjes(TempList[Cbt.SelectedIndex]); 
+                foreach ( Vak v in TempList1)
                 {
                     Vakken.Add(v.Naam);
                 }
-
             }
             Cbt2.ItemsSource = Vakken;
         }
@@ -56,8 +54,8 @@ namespace Opvolging
         private void VolgendeK_Click_1(object sender, RoutedEventArgs e)
         {
             using (Repos rep = new Repos())
-            {
-                rep.ToevoegenT(new Test() { TestNaam = Testnaam.Text });
+            { // geen savechanges 
+                rep.ToevoegenTV(new Test() { TestNaam = Testnaam.Text }, (TempList1[Cbt2.SelectedIndex]));
             }
 
             MessageBox.Show("Test toegevoegd.");

@@ -45,5 +45,6 @@
             </DataGrid.Columns>
         </DataGrid>
         <Button x:Name="VerwijderenLN" Content="Verwijderen" HorizontalAlignment="Left" Margin="724,103,0,0" VerticalAlignment="Top" Width="114" Height="34" FontWeight="Bold" FontSize="14" Click="VerwijderenLN_Click"/>
+        <Label Content="Dubbelklik op leerling waarvan u de opmerkingen wilt bekijken." HorizontalAlignment="Left" Margin="54,169,0,0" VerticalAlignment="Top" Width="407" FontWeight="Bold"/>
     </Grid>
 </Window>

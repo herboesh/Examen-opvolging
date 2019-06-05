@@ -58,7 +58,7 @@ namespace Opvolging
         {
             using (Repos rep = new Repos())
             { // geen savechanges 
-                rep.ToevoegenV(new Vak()  { Naam = Vak1.Text, Leerkracht = rep.PakLeerkracht(TempList[CB1.SelectedIndex])} , (TempList1[CB7.SelectedIndex]));
+                rep.ToevoegenV(new Vak() { Naam = Vak1.Text, Leerkracht = rep.PakLeerkracht(TempList[CB1.SelectedIndex]) } , (TempList1[CB7.SelectedIndex]));
                 rep.ToevoegenV(new Vak() { Naam = Vak2.Text, Leerkracht = rep.PakLeerkracht(TempList[CB2.SelectedIndex]) } , (TempList1[CB7.SelectedIndex]));
                 rep.ToevoegenV(new Vak() { Naam = Vak3.Text, Leerkracht = rep.PakLeerkracht(TempList[CB3.SelectedIndex]) } , (TempList1[CB7.SelectedIndex]));
                 rep.ToevoegenV(new Vak() { Naam = Vak4.Text, Leerkracht = rep.PakLeerkracht(TempList[CB4.SelectedIndex]) } , (TempList1[CB7.SelectedIndex]));

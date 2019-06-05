@@ -29,9 +29,9 @@
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
-        <ComboBox x:Name="Cbt" HorizontalAlignment="Left" Margin="155,109,0,0" VerticalAlignment="Top" Width="142"/>
+        <ComboBox x:Name="Cbt" HorizontalAlignment="Left" Margin="155,109,0,0" VerticalAlignment="Top" Width="142" SelectionChanged="Cbt_SelectionChanged"/> <!--SelectionChanged="Cbt_SelectionChanged"-->
         <Label Content="Vak" HorizontalAlignment="Left" Margin="37,162,0,0" VerticalAlignment="Top" Width="57" FontWeight="Bold"/>
-        <ComboBox x:Name="Cbt2" HorizontalAlignment="Left" Margin="155,160,0,0" VerticalAlignment="Top" Width="142" SelectionChanged="Cbt2_SelectionChanged"/>
+        <ComboBox x:Name="Cbt2" HorizontalAlignment="Left" Margin="155,160,0,0" VerticalAlignment="Top" Width="142"/>
         <Label Content="Naam Test" HorizontalAlignment="Left" Margin="37,212,0,0" VerticalAlignment="Top" FontWeight="Bold" Width="74"/>
         <TextBox x:Name="Testnaam" HorizontalAlignment="Left" Height="26" Margin="155,212,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="136"/>
 
